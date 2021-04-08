@@ -1,0 +1,95 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Abel", sans-serif;
+}
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(45deg, cyan, pink);
+}
+.card {
+  /* border: 1px solid black; */
+  display: grid;
+  gap: 5px;
+  padding: 30px;
+  border-radius: 20px;
+  background: white;
+}
+h1 {
+  text-align: center;
+}
+label {
+  display: block;
+  color: grey;
+}
+
+input {
+  border: none;
+  border-bottom: 2px solid rgb(168, 166, 166);
+  padding-bottom: 5px;
+  transition: 0.3s;
+  flex: 4;
+}
+input:focus {
+  transform: scale(1.1);
+}
+span {
+  width: 30px;
+  /* border: 2px solid coral; */
+  justify-self: right;
+  padding: 10px;
+}
+.mark {
+  display: flex;
+}
+input:valid + span::before {
+  content: "✅";
+}
+input:valid {
+  border: 2px solid rgb(206, 175, 180);
+  background: linear-gradient(45deg, pink, purple);
+  border-radius: 20px;
+  color: white;
+  padding-left: 10px;
+  margin: 0px;
+  font-size: 1.5rem;
+}
+select {
+  border: none;
+  border-bottom: 2px solid rgb(209, 206, 206);
+  padding-bottom: 5px;
+}
+select:hover {
+  transform: scale(1.2);
+}
+textarea {
+  border: none;
+  border-bottom: 2px solid rgb(168, 166, 166);
+}
+.anchor {
+  display: grid;
+  place-content: center;
+}
+button {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(45deg, blue, pink);
+  border-radius: 20px;
+  padding: 6px;
+  border: none;
+  margin: 10px;
+  font-size: 1.2rem;
+  color: white;
+  transition: 0.5s;
+  width: 200px;
+}
+button:hover {
+  transform: scale(1.15);
+  filter: contrast(2);
+}
+button img {
+  filter: invert(100%);
+}
