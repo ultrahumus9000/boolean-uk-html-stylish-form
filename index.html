@@ -1,12 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Static Template</title>
   </head>
+
   <body>
-    <h1>This is a static template, there is no bundler or bundling involved!</h1>
+    <div class="card">
+      <h1>HELLO!</h1>
+
+      <label>Your Name </label>
+      <input type="text" required placeholder="Enter Your Name" />
+
+      <label>Email</label>
+      <input type="email" required placeholder="Enter Your Email Address" />
+
+      <label for="">
+        Services
+        <select name="" id="">
+          <option> App Design</option>
+          <option> Web Design</option>
+          <option> Software Design</option>
+        </select>
+      </label>
+
+      <label for="">
+        Budget
+        <select name="" id="">
+          <option> £1000</option>
+          <option>£2000</option>
+          <option> £3000</option>
+        </select>
+      </label>
+      <label for=""> Message</label>
+      <textarea
+        name=""
+        id=""
+        cols="30"
+        rows="10"
+        placeholder="Your text is here"
+      ></textarea>
+      <button>Submit</button>
+    </div>
   </body>
 </html>
